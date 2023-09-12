@@ -23,3 +23,6 @@ ENV PATH="/opt/venv/bin:$PATH"
 COPY . .
 USER harshit:chaurasia
 CMD ["python", "app.py"]
+
+# For car price prediction
+# CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8000"]
